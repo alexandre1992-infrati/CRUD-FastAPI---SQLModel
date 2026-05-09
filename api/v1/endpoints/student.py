@@ -48,6 +48,7 @@ async def get_student(student_id: int, db: AsyncSession = Depends(get_session)):
         student: SchoolModel = result.scalar_one_or_none()
         if student:
             return student
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Student not found")
         else:
             raise HTTPException(detail='Aluno não localizado', status_code=status.HTTP_404_NOT_FOUND)
 

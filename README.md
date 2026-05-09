@@ -52,6 +52,20 @@ Este projeto é uma API RESTful simples para gerenciamento de alunos (CRUD) usan
 
 A API estará disponível em `http://localhost:8080`.
 
+## Testes
+
+Para executar os testes, instale as dependências adicionais:
+```bash
+pip install pytest pytest-asyncio httpx aiosqlite
+```
+
+Execute os testes:
+```bash
+pytest test/test.py -v
+```
+
+Os testes cobrem os endpoints principais: criação, listagem e busca de alunos.
+
 ## Estrutura do Projeto
 
 ```
