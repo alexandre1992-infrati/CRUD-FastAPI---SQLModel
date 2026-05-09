@@ -1,5 +1,5 @@
 from typing import Generator
-from sqlalchmey.ext.asyncio import AsyncSession
+from sqlalchemy.ext.asyncio import AsyncSession
 from core.database import Session
 
 
